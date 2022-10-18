@@ -1,8 +1,7 @@
-package sprint2.Övningsuppgift8;
+package sprint2.övningsuppgift8;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 

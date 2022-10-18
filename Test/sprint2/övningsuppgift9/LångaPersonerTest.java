@@ -1,9 +1,9 @@
-package sprint2.Övningsuppgift9;
+package sprint2.övningsuppgift9;
 
 import org.junit.jupiter.api.Test;
 
 public class LångaPersonerTest {
-    LångaPersoner test = new LångaPersoner();
+    LångaPersoner test = new LångaPersoner(true);
 
     @Test
     public void hittaLängdTest(){

@@ -1,8 +1,6 @@
-package sprint2.Uppgift6;
+package sprint2.uppgift6;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class VäxelTest {
     Växel x = new Växel();

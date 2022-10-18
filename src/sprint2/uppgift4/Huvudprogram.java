@@ -1,8 +1,7 @@
-package sprint2.Uppgift4;
+package sprint2.uppgift4;
 
 import sprint2.TDDuppgift2.Bil;
 
-import javax.swing.*;
 import java.util.Scanner;
 
 public class Huvudprogram {

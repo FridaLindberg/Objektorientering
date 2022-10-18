@@ -1,4 +1,4 @@
-package sprint2.Uppgift3;
+package sprint2.uppgift3;
 
 import java.util.Scanner;
 

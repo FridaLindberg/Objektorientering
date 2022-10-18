@@ -1,10 +1,8 @@
-package sprint2.Uppgift5;
+package sprint2.uppgift5;
 
 import javax.swing.*;
 
 import static javax.swing.JOptionPane.*;
-
-import java.util.*;
 
 public class Bilhyra {
 

@@ -1,4 +1,4 @@
-package sprint2.Övningsuppgift8;
+package sprint2.övningsuppgift8;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

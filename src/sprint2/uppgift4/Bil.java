@@ -1,4 +1,4 @@
-package sprint2.Uppgift4;
+package sprint2.uppgift4;
 
 public class Bil {
     private double dagensMätare;

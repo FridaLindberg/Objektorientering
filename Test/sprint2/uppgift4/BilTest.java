@@ -1,4 +1,4 @@
-package sprint2.Uppgift4;
+package sprint2.uppgift4;
 
 import org.junit.jupiter.api.Test;
 import sprint2.TDDuppgift2.Bil;
