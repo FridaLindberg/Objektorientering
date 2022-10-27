@@ -31,27 +31,33 @@ public class Miniräknare extends JFrame implements ActionListener {
     }
 
     Miniräknare() throws ScriptException {
+        panel2.setPreferredSize(new Dimension(250,50));
         setLayout(new BorderLayout());
         add(panel1);
         add(panel2, BorderLayout.NORTH);
         panel1.setLayout(new GridLayout(5,3));
-        panel1.add(nio); nio.addActionListener(this); nio.setBackground(new Color(154,222,255));
-        panel1.add(åtta); åtta.addActionListener(this); åtta.setBackground(new Color(154,222,255));
-        panel1.add(sju); sju.addActionListener(this); sju.setBackground(new Color(154,222,255));
-        panel1.add(sex); sex.addActionListener(this); sex.setBackground(new Color(154,222,255));
-        panel1.add(fem); fem.addActionListener(this); fem.setBackground(new Color(154,222,255));
-        panel1.add(fyra); fyra.addActionListener(this); fyra.setBackground(new Color(154,222,255));
-        panel1.add(tre); tre.addActionListener(this); tre.setBackground(new Color(154,222,255));
-        panel1.add(två); två.addActionListener(this); två.setBackground(new Color(154,222,255));
-        panel1.add(ett); ett.addActionListener(this); ett.setBackground(new Color(154,222,255));
-        panel1.add(plus); plus.addActionListener(this); plus.setBackground(new Color(148,255,141));
-        panel1.add(noll); noll.addActionListener(this); noll.setBackground(new Color(154,222,255));
-        panel1.add(minus); minus.addActionListener(this); minus.setBackground(new Color(148,255,141));
-        panel1.add(gånger); gånger.addActionListener(this); gånger.setBackground(new Color(148,255,141));
-        panel1.add(likamed); likamed.addActionListener(this); likamed.setBackground(new Color(255,141,206));
-        panel1.add(delat); delat.addActionListener(this); delat.setBackground(new Color(148,255,141));
+        Color blå = new Color(154,222,255);
+        Color grön = new Color(148,255,141);
+        Color rosa = new Color(255,141,206);
+        panel1.add(nio); nio.addActionListener(this); nio.setBackground(blå);
+        panel1.add(åtta); åtta.addActionListener(this); åtta.setBackground(blå);
+        panel1.add(sju); sju.addActionListener(this); sju.setBackground(blå);
+        panel1.add(sex); sex.addActionListener(this); sex.setBackground(blå);
+        panel1.add(fem); fem.addActionListener(this); fem.setBackground(blå);
+        panel1.add(fyra); fyra.addActionListener(this); fyra.setBackground(blå);
+        panel1.add(tre); tre.addActionListener(this); tre.setBackground(blå);
+        panel1.add(två); två.addActionListener(this); två.setBackground(blå);
+        panel1.add(ett); ett.addActionListener(this); ett.setBackground(blå);
+        panel1.add(plus); plus.addActionListener(this); plus.setBackground(grön);
+        panel1.add(noll); noll.addActionListener(this); noll.setBackground(blå);
+        panel1.add(minus); minus.addActionListener(this); minus.setBackground(grön);
+        panel1.add(gånger); gånger.addActionListener(this); gånger.setBackground(grön);
+        panel1.add(likamed); likamed.addActionListener(this); likamed.setBackground(rosa);
+        panel1.add(delat); delat.addActionListener(this); delat.setBackground(grön);
         panel2.setSize(230,50);
         panel2.setLayout(new BorderLayout());
+        Font f = new Font("TimesRoman", Font.BOLD, 18);
+        field.setFont(f);
         panel2.add(field);
         setSize(250,300);
         setLocationRelativeTo(null);
