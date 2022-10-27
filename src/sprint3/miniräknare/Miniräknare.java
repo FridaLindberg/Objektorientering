@@ -33,7 +33,7 @@ public class Miniräknare extends JFrame implements ActionListener {
     Miniräknare() throws ScriptException {
         setLayout(new BorderLayout());
         add(panel1);
-        add(panel2, BorderLayout.SOUTH);
+        add(panel2, BorderLayout.NORTH);
         panel1.setLayout(new GridLayout(5,3));
         panel1.add(nio); nio.addActionListener(this); nio.setBackground(new Color(154,222,255));
         panel1.add(åtta); åtta.addActionListener(this); åtta.setBackground(new Color(154,222,255));
@@ -50,6 +50,7 @@ public class Miniräknare extends JFrame implements ActionListener {
         panel1.add(gånger); gånger.addActionListener(this); gånger.setBackground(new Color(148,255,141));
         panel1.add(likamed); likamed.addActionListener(this); likamed.setBackground(new Color(255,141,206));
         panel1.add(delat); delat.addActionListener(this); delat.setBackground(new Color(148,255,141));
+        panel2.setSize(230,50);
         panel2.setLayout(new BorderLayout());
         panel2.add(field);
         setSize(250,300);
