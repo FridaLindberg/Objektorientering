@@ -1,6 +1,4 @@
-package övningsuppgift5.TelefonbokObjekt;
-
-import övningsuppgift5.TelefonbokString.Kompis;
+package sprint4.övningsuppgift5.TelefonbokObjekt;
 
 import java.util.Arrays;
 import java.util.List;

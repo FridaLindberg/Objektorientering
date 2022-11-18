@@ -1,4 +1,4 @@
-package övningsuppgift5.TelefonbokString;
+package sprint4.övningsuppgift5.TelefonbokString;
 
 public class Kompis {
 

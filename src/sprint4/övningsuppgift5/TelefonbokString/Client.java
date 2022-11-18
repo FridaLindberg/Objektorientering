@@ -1,4 +1,4 @@
-package övningsuppgift5.TelefonbokString;
+package sprint4.övningsuppgift5.TelefonbokString;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -14,7 +14,7 @@ public class Client {
 
     public Client() throws UnknownHostException {
 
-        String ip = "172.20.200.181";
+        InetAddress ip = InetAddress.getLocalHost();
 
         try(Socket socket = new Socket(ip, port);
             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);

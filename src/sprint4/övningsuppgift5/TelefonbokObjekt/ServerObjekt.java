@@ -1,35 +1,35 @@
-package övningsuppgift5.TelefonbokString;
+package sprint4.övningsuppgift5.TelefonbokObjekt;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class Server {
+public class ServerObjekt {
 
     int port = 33333;
     String fråga = "Vilken kompis vill du hitta?";
 
-    public Server() {
+    public ServerObjekt() {
 
-        Databas db = new Databas();
+        DatabasObjekt db = new DatabasObjekt();
         try (ServerSocket serverSocket = new ServerSocket(port);
              Socket socket = serverSocket.accept();
              BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-             PrintWriter out = new PrintWriter(socket.getOutputStream(), true)) {
+             ObjectOutputStream out = new ObjectOutputStream(socket.getOutputStream())) {
 
-            out.println(fråga);
+            out.writeObject(fråga);
             String frånKlient;
 
             while((frånKlient = in.readLine()) != null) {
-                String kompis = db.getKompis(frånKlient);
+                KompisObjekt kompis = db.getKompis(frånKlient);
                 if (kompis != null) {
-                    out.println(kompis);
+                    out.writeObject(kompis);
                 } else {
-                    out.println("Denna person finns inte");
+                    out.writeObject("Denna person finns inte");
                 }
-                out.println(fråga);
+                out.writeObject(fråga);
             }
 
         } catch (Exception e) {
@@ -38,6 +38,6 @@ public class Server {
     }
 
     public static void main(String[] args) {
-        new Server();
+        new ServerObjekt();
     }
 }

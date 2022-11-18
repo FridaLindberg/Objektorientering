@@ -1,4 +1,4 @@
-package övningsuppgift5.TelefonbokObjekt;
+package sprint4.övningsuppgift5.TelefonbokObjekt;
 
 import java.io.Serializable;
 
