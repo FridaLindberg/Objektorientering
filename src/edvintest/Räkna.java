@@ -11,5 +11,5 @@ public class Räkna {
         else {
             throw new IllegalArgumentException();
         }
-    }
+    } // hej kommentar 1
 }
